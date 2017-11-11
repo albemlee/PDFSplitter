@@ -15,5 +15,5 @@ for file in os.listdir(dir_path + '/Files'):
                 y = i
             output = PdfFileWriter()
             output.addPage(inputpdf.getPage(i))
-            with open('Outputs/G2' + file.replace('.pdf','') + "_d%s.pdf" % str(y), "wb") as outputStream:
+            with open('Outputs/' + file.replace('.pdf','') + "_d%s.pdf" % str(y), "wb") as outputStream:
                 output.write(outputStream)
